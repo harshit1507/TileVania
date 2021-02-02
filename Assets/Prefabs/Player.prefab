@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6204698886133484242}
   - component: {fileID: 9028311067506071777}
   - component: {fileID: 1133576160}
-  m_Layer: 0
+  - component: {fileID: 803539037}
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +92,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 194370999
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -8764484971933765363, guid: 6014a523eda23624e9f7ffa12b4e37d0,
     type: 3}
@@ -135,12 +136,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 2230068996041112521}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e4316b47880d22f4ba06ae9db9bf0771, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.52, y: 0.79}
+  m_Offset: {x: -0.006765485, y: 0}
+  m_Size: {x: 0.53353095, y: 0.79}
   m_Direction: 0
 --- !u!114 &1133576160
 MonoBehaviour:
@@ -154,5 +155,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c9ab61cca7a37419e5acc5d9ca4010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 5
+  runSpeed: 7
   jumpSpeed: 28
+  climpSpeed: 5
+--- !u!61 &803539037
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2230068996041112521}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.033825874, y: -0.35856736}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6875, y: 0.8125}
+    newSize: {x: 0.22, y: 0.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.33569908, y: 0.095365286}
+  m_EdgeRadius: 0
