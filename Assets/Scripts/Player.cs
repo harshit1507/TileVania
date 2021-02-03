@@ -103,5 +103,5 @@ public class Player : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = deathKick;
             isAlive = false;
         }
-    }
+    }   
 }
