@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider2D;
     BoxCollider2D myFeet;
+ 
     float gravityScaleAtStart;
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
         myBodyCollider2D = GetComponent<CapsuleCollider2D>();
         gravityScaleAtStart = myRigidBody.gravityScale;
         myFeet = GetComponent<BoxCollider2D>();
+       
     }
 
     // Update is called once per frame
@@ -101,8 +103,9 @@ public class Player : MonoBehaviour
         {                       
             myAnimator.SetTrigger("Dying");
             GetComponent<Rigidbody2D>().velocity = deathKick;
-            isAlive = false;
+            isAlive = false;     
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            
         }
     }   
 }
